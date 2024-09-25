@@ -1,0 +1,133 @@
+/* Global Styles */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+} */
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('matrixscreensaver_screenshot.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    text-align: center; /* Center the heading */
+    color: #ff6464f2; /* White color for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5rem; /* Larger font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+    animation: fadeInDown 0.5s ease-in-out; /* Fade in down animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 20px;
+   
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; /* Animation for form */
+}
+
+input[type="number"] {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    transition: border 0.3s;
+    color: #fff; /* White text color */
+    background-color: #333; /* Dark background for inputs */
+}
+
+input[type="number"]:focus {
+    border: 1px solid #2d242465; /* Border color change on focus */
+}
+
+button {
+    background: #cb0b0be7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #00000065; /* Darker blue on hover */
+    transform: translateY(-2px); /* Button lift effect on hover */
+}
+
+#input-boxes1, #input-boxes2 {
+    
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    align-content: center;
+    border-radius: 5px;
+    
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center;
+}
+
+#result-box {
+    
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 15px; /* Increased padding for better spacing */
+   
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3)fadeIn 0.5s ease-in-out; /* Subtle shadow for depth */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for result box */
+    background-color: #333;
+    color: #fff;
+}
+
+/* Adjusted heading color for better contrast */
+h3 {
+    color: ; /* Bright blue for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+
+h3 {
+    color: #c67818;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="number"] {
+        width: 50px; /* Adjust input width for smaller screens */
+    }
+}
